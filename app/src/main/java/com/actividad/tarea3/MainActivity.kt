@@ -42,17 +42,16 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun FoodList(modifier: Modifier = Modifier) {
     val foodList = listOf(
-        Food("Tacos", "México", R.drawable.tacos, "Los tacos son una comida tradicional mexicana..."),
-        Food("Sushi", "Japón", R.drawable.sushi, "El sushi es un platillo japonés..."),
-        Food("Paella", "España", R.drawable.paella, "La paella es una comida española..."),
-        Food("Pasta", "Italia", R.drawable.pasta, "La pasta es un alimento básico en la cocina italiana..."),
-        Food("Curry", "India", R.drawable.curry, "El curry es un plato característico de la cocina india..."),
-        Food("Biryani", "Pakistán", R.drawable.biryani, "El biryani es un plato de arroz especiado típico de Pakistán..."),
-        Food("Dim Sum", "China", R.drawable.dismun, "El dim sum es una variedad de platillos chinos en porciones pequeñas..."),
-        Food("Falafel", "Medio Oriente", R.drawable.falafel, "El falafel es un plato vegetariano popular en la cocina del Medio Oriente..."),
-        Food("Kimchi", "Corea del Sur", R.drawable.kimchi, "El kimchi es un plato fermentado hecho principalmente de repollo..."),
-        Food("Moussaka", "Grecia", R.drawable.moussaka, "La moussaka es un plato tradicional griego que incluye carne y berenjenas...")
-        // Añade más platillos según sea necesario
+        Food("Ramen", "Japón", R.drawable.ramen, "El ramen es una sopa de fideos japonesa muy popular..."),
+        Food("Churrasco", "Brasil", R.drawable.churrasco, "El churrasco es un tipo de carne asada típico en Brasil..."),
+        Food("Poutine", "Canadá", R.drawable.poutin, "La poutine es un platillo canadiense que consiste en papas fritas con queso y salsa..."),
+        Food("Shawarma", "Medio Oriente", R.drawable.shawarma, "El shawarma es un platillo de carne asada en un pan plano..."),
+        Food("Goulash", "Hungría", R.drawable.goulash, "El goulash es un estofado húngaro de carne y vegetales..."),
+        Food("Ceviche", "Perú", R.drawable.ceviche, "El ceviche es un plato de pescado marinado típico de Perú..."),
+        Food("Baklava", "Turquía", R.drawable.baklava, "La baklava es un postre turco hecho con nueces y jarabe..."),
+        Food("Samosa", "India", R.drawable.samosa, "La samosa es un aperitivo indio relleno de especias y verduras..."),
+        Food("Pavlova", "Australia", R.drawable.pavlova, "La pavlova es un postre de merengue con frutas frescas..."),
+        Food("Borscht", "Rusia", R.drawable.borscht, "El borscht es una sopa de remolacha típica de Rusia...")
     )
 
     var selectedFood by remember { mutableStateOf<Food?>(null) }
